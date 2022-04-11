@@ -1,3 +1,12 @@
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex:  1 1 auto;
+}
 
 .visually-hidden {
     position: absolute;
@@ -10,4 +19,55 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.title {
+    font-family: "OpenSans-Bold", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    color: #48555B;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+        content: '';
+        top: 120%;
+        left: 47%;
+        width: 50px;
+        height: inherit;
+        border-bottom: 2px solid #00A4E5;
+        position: absolute;
+        
+    }
+}
+.text {
+    font-family: "OpenSans-Regular","Arial", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 177%;
+    color: #48555B;
+}
+
+.button {
+    padding: 11px 29px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    background-color: #00A4E5;
+    overflow: hidden;
+    word-break: break-all;
+    box-sizing: border-box;
 }

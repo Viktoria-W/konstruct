@@ -1,0 +1,84 @@
+.main {
+
+    &__about {
+    }
+}
+.about {
+
+    &__container {
+        margin-top: 58px;
+        max-width: 941px;
+        padding: 0px 10px
+    }
+
+    &__title {
+        padding: 0px 100px;
+        text-align: center;
+    }
+
+    &__grid-block {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) ;
+        margin-top: 96px;
+        grid-gap: 76px;
+    }
+
+    &__text-block {
+        align-self: center;
+    }
+
+    &__text-block-title {
+        font-family: "OpenSans-Bold";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #48555B;
+    }
+
+    &__link {
+        color: #00A4E5;
+    }
+
+    &__text-block-text {
+        margin-top: 30px;
+    }
+
+    &__card-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.card-block {
+
+    &__item {
+        width: 140px;
+        height: 224px;
+        position: relative;
+        margin-bottom: 5px;
+
+        &:not(:last-child) {
+            margin-right: 6px;
+        }
+    }
+
+    &__img {
+        width: 140px;
+        height: 224px;
+    }
+
+    &__title {
+        position: absolute;
+        top: 15px;
+        left: 14px;
+        font-family: "OpenSans-ExtraBold";
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 121%;
+        color: #FFFFFF;
+        display: flex;
+        flex-wrap: wrap;
+        word-break: break-all;
+    }
+}

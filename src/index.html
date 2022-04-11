@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/head.html', {
-"title":"Языковая школа Britlex"
+"title":"Строительная фирма Konstruct"
 })
 <body>
     <div class="wrapper">
-        <h1 class="visually-hidden"></h1>
+        <h1 class="visually-hidden">Строительная фирма Konstruct</h1>
+        <section class="fullscreen">
+            <div class="fullscreen__body">
+                <a href="#" class="fullscreen__logo">
+                    <img src="@img/logo.svg" alt="" class="fullscreen__img">
+                </a>
+                <div class="fullscreen__text-block">
+                    <h2 class="fullscreen__title">PARTNER WITH KONSTUCT</h2>
+                    <p class="fullscreen__text">An award-winning construction management firm</p>
+                </div>
+                <p class="fullscreen__scroll">SCROLL DOWN</p>
+            </div>
+        </section>
         @@include('html/header.html', {})
         <main class="main">
+            <section class="main__about about">
+                <div class="about__container container">
+                    <h3 class="about__title title">OUR STORY</h3>
+                    <div class="about__grid-block">
+                        <div class="about__text-block">
+                            <h3 class="about__text-block-title">Founded in 2011 by John Mathew Smith, <a href="#" class="about__link">Konstruct</a> has become the number one construction management firm</h3>
+                            <p class="about__text-block-text text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        </div>
+                        <div class="about__card-block card-block">
+                            <div class="card-block__item">
+                                <img src="@img/bg-card-1.jpg" alt="PLAN" class="card-block__img">
+                                <h4 class="card-block__title">WE<br> PLAN</h4>
+                            </div>
+                            <div class="card-block__item">
+                                <h4 class="card-block__title">WE<br> MANAGE</h4>
+                                <img src="@img/bg-card-2.jpg" alt="MANAGE" class="card-block__img">
+                            </div>
+                            <div class="card-block__item">
+                                <h4 class="card-block__title">WE<br> BUILD</h4>
+                                <img src="@img/bg-card-3.jpg" alt="BUILD" class="card-block__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__advantages advantages">
+                <div class="advantages__container container">
+                    <div class="advantages__title-block">
+                        <h3 class="advantages__title title">OUR CAPABILITIES</h3>
+                        <p class="advantages__text text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        <a href="#" class="advantages__link button">ALL SERVICES</a>
+                    </div>
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <img src="@img/pencil.svg" alt="CONSTRUCTION MANAGEMENT" class="advantages__card-img">
+                            <h4 class="advantages__card-title">PROJECT AND CONSTRUCTION MANAGEMENT</h4>
+                            <p class="advantages__card-text text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        </li>
+                        <li class="advantages__item">
+                            <img src="@img/shop.svg" alt="STRUCTURE AUDIT" class="advantages__card-img">
+                            <h4 class="advantages__card-title">STRUCTURE AUDIT AND MAINTENANCE</h4>
+                            <p class="advantages__card-text text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        </li>
+                        <li class="advantages__item">
+                            <img src="@img/model.svg" alt="MODELING" class="advantages__card-img">
+                            <h4 class="advantages__card-title">FACTORY CONSTRUCTION AND MODELING</h4>
+                            <p class="advantages__card-text text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </main>
         @@include('html/footer.html', {})
     </div>
