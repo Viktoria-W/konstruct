@@ -70,4 +70,18 @@
     overflow: hidden;
     word-break: break-all;
     box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #48555B;
+        transition: .9s;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+
+    &:focus {
+        text-decoration: underline;
+    }
 }

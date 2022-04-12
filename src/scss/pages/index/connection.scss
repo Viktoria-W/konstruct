@@ -1,0 +1,48 @@
+.main {
+
+    &__connection {
+        max-width: 100%;
+        height: auto;
+        background-color: #e6e6e6;
+        background-image: url("../img/bg-connection.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+    }
+}
+.connection {
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        min-height: 499px;
+    }
+
+    &__title {
+        font-family: "OpenSans-Bold","Arial",sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        color: #48555B;
+        text-align: center;
+        margin-bottom: 35px;
+        max-width: 700px;
+    }
+
+    &__link {
+        display: inline-block;
+        align-self: center;
+    }
+}
+
+@media (max-width:$mobile-l) {
+    .connection {
+        &__container {
+            min-height: 250px;
+        }
+    }
+}

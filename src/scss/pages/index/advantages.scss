@@ -1,14 +1,10 @@
-.main {
-
-    &__advantages {
-    }
-}
 .advantages {
 
     &__container {
         max-width: 941px;
         padding: 0px 10px;
         margin-top: 118px;
+        margin-bottom: 115px;
     }
 
     &__title-block {
@@ -31,6 +27,7 @@
 
     &__link {
         display: inline-block;
+        align-self: center;
     }
 
     &__list {
@@ -71,8 +68,28 @@
 
 @media (max-width: $tablet) {
     .advantages {
+        &__container {
+            margin-bottom: 60px;
+        }
+
         &__list {
             justify-content: center;
+        }
+
+        &__title {
+
+            &::after {
+                top: 100%;
+            }
+        }
+
+        &__title-block {
+            justify-content: center;
+            text-align: center;
+        }
+
+        &__text {
+            margin: 10px 0px 10px 0px;
         }
     }
 }
